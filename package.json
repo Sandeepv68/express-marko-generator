@@ -1,7 +1,7 @@
 {
   "name": "express-marko-generator",
   "version": "1.0.0",
-  "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS frmework",
+  "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
