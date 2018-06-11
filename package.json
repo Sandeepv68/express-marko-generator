@@ -19,6 +19,7 @@
   ],
   "author": "Sandeep Vattapparambil",
   "license": "MIT",
+  "preferGlobal": true,
   "bin": {
     "express-marko-generator": "./index.js"
   },
