@@ -1,6 +1,6 @@
 {
   "name": "express-marko-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework",
   "main": "index.js",
   "scripts": {
