@@ -1,0 +1,26 @@
+{
+  "name": "express-marko-generator",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS frmework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "expressjs",
+    "markojs",
+    "lassojs",
+    "materializecss",
+    "html",
+    "css",
+    "javascript",
+    "jquery"
+  ],
+  "author": "Sandeep Vattapparambil",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "figlet": "^1.2.0"
+  }
+}
