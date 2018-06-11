@@ -1,6 +1,6 @@
 {
   "name": "express-marko-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
-    "express-marko-generator": "./index.js"
+    "express-marko-generator": "./bin/app.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
