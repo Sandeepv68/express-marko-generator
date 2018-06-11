@@ -8,3 +8,20 @@ A generic CLI tool to generate an Expressjs application with MarkoJS and Materia
 ```sh
 npm i express-marko-generator -g
 ```
+
+### Usage
+```sh
+express-marko-generator  <project-name>
+```
+and then cd into ```<project-name>```
+
+then install dependecies by
+```sh
+npm i
+```
+
+then you can run your project by
+```sh
+npm start
+```
+and go to ```http://localhost:3000```
