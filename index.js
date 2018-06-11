@@ -21,5 +21,6 @@ if (process.argv[2]) {
         }
         log(chalk.yellow.bold(data));
         log(chalk.blue(`v${config.version}`));
+        log(chalk.blue(`[option]       [description]`));
     });
 }
