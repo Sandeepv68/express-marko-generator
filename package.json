@@ -19,6 +19,9 @@
   ],
   "author": "Sandeep Vattapparambil",
   "license": "MIT",
+  "bin": {
+    "express-marko-generator": "./index.js"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "clui": "^0.3.6",
