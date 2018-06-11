@@ -21,6 +21,9 @@ if (process.argv[2]) {
         }
         log(chalk.yellow.bold(data));
         log(chalk.blue(`v${config.version}`));
-        log(chalk.blue(`[option]       [description]`));
+        log(chalk.blue(`\n[option]         [description]`));
+        log(chalk.blue(` -v | --version     get version`));
+        log(chalk.blue(`\nUsage:`));
+        log(chalk.blue(`\express-marko-generator <project-name>`));
     });
 }
