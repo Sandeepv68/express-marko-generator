@@ -13,7 +13,6 @@ const config = {
 };
 const log = console.log;
 const repoUrl = `https://github.com/SandeepVattapparambil/express-marko.git`;
-const gitCommand = `git clone ${repoUrl}`;
 var drawLogo = new Promise(function (resolve, reject) {
     figlet(config.name, function (err, data) {
         if (err) {
@@ -42,8 +41,9 @@ function generate() {
                 log(chalk.red.bold(`\nError: Git is not installed`));
                 process.exit();
             }
+            const gitCommand = `git clone ${repoUrl} ${folderName}`;
             progress.start();
-            progress.message('\ncloning repo...');
+            progress.message('cloning repo...');
             let clone = exec(gitCommand, function (err, data) {
                 if (err) {
                     log(chalk.red.bold(err));
