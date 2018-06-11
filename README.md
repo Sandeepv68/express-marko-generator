@@ -1,5 +1,5 @@
 ![express-marko-logo](https://raw.githubusercontent.com/SandeepVattapparambil/express-marko-generator/master/logo.png)
-# Express Marko Generator v1.0.2
+# Express Marko Generator v1.0.3
 A generic CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework.
 > **Note:**  Please note that this CLI tool is not an official ebay project.
 

@@ -1,6 +1,6 @@
 {
   "name": "express-marko-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework",
   "main": "index.js",
   "scripts": {
@@ -28,5 +28,14 @@
     "clui": "^0.3.6",
     "figlet": "^1.2.0",
     "replace-in-file": "^3.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandeepVattapparambil/express-marko-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SandeepVattapparambil/express-marko-generator/issues"
+  },
+  "homepage": "https://github.com/SandeepVattapparambil/express-marko-generator#readme"
 }
