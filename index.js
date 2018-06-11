@@ -1,8 +1,9 @@
 const figlet = require('figlet');
 const chalk = require('chalk');
 const clui = require('clui');
+const replace = require('replace-in-file');
 const spinner = clui.Spinner;
-const progress = new spinner('\ncloning repo...  ', ['⣾','⣽','⣻','⢿','⡿','⣟','⣯','⣷']);
+const progress = new spinner('\ncloning repo...  ', ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']);
 
 const {
     exec
@@ -16,7 +17,7 @@ const repoUrl = `https://github.com/SandeepVattapparambil/express-marko.git`;
 var drawLogo = new Promise(function (resolve, reject) {
     figlet(config.name, function (err, data) {
         if (err) {
-            log(chalk.red('Something went wrong...'));
+            log(chalk.red('logo rendering failed!'));
             reject(err);
         }
         log(chalk.yellow.bold(data));
@@ -50,14 +51,44 @@ function generate() {
                     process.exit();
                 }
             });
-            clone.on('close', function(code){
+            clone.on('close', function (code) {
                 progress.stop();
                 log(chalk.green(`\nProject files downloaded successfully.`));
+                let packageFiles = {
+                    files: [`${folderName}/package.json`, `${folderName}/package-lock.json`],
+                    from: 'experiment',
+                    to: `${folderName}`
+                };
+                let serverFile = {
+                    files: [`${folderName}/bin/server.js`],
+                    from: 'experiment',
+                    to: `${folderName}`
+                };
+                let configFiles = {
+                    files: [`${folderName}/config/pino.js`, `${folderName}/config/lasso.js`],
+                    from: 'Express Marko',
+                    to: `${folderName}`
+                };
+                replace(packageFiles, (error, changes) => {
+                    if (error) {
+                        return console.error('Error occurred:', error);
+                    }
+                });
+                replace(serverFile, (error, changes) => {
+                    if (error) {
+                        return console.error('Error occurred:', error);
+                    }
+                });
+                replace(configFiles, (error, changes) => {
+                    if (error) {
+                        return console.error('Error occurred:', error);
+                    }
+                    log(chalk.green(`Project customizations completed succesfully.`));
+                    log(chalk.green(`Project -> ${folderName} created succesfully.`));
+                });
             });
         });
     } else {
-        log(chalk.blue(`\n[option]         [description]`));
-        log(chalk.blue(` -v | --version     get version`));
         log(chalk.blue(`\nUsage:`));
         log(chalk.blue(`\express-marko-generator <project-name>`));
     }
