@@ -1,5 +1,5 @@
 /**
- * Express Marko Generator v1.0.4
+ * Express Marko Generator v1.0.5
  * A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework.
  * Written by: Sandeep Vattapparambil
  * Email: sandeepv68@gmail.com
@@ -48,7 +48,7 @@ const {
  */
 const config = {
     name: 'Express Marko Generator',
-    version: "1.0.4"
+    version: "1.0.5"
 };
 
 /**
@@ -119,6 +119,75 @@ function generate() {
             clone.on('close', function (code) {
                 progress.stop();
                 log(chalk.green(`\nProject files downloaded successfully.`));
+                if (/^win/i.test(process.platform)) {
+                    /**
+                     * Windows cleanups
+                     */
+                    exec(`rmdir ${folderName}\\.git /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError removing .git folder, ${err}`));
+                        }
+                    });
+                    exec(`rmdir ${folderName}\\.github /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError removing .git folder, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}\\CODE_OF_CONDUCT.md /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}\\PULL_REQUEST_TEMPLATE.md /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}\\CONTRIBUTING.md /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}\\LICENSE /s /q`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                } else {
+                    /**
+                     * Cleanup in unix, mac, linux
+                     */
+                    exec(`rm ${folderName}/.git`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError removing .git folder, ${err}`));
+                        }
+                    });
+                    exec(`rm ${folderName}/.github`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError removing .git folder, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}/CODE_OF_CONDUCT.md`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}/PULL_REQUEST_TEMPLATE.md`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}/CONTRIBUTING.md`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                    exec(`del ${folderName}/LICENSE`, function(err){
+                        if(err){
+                            log(chalk.red.bold(`\nError cleaning up the project, ${err}`));
+                        }
+                    });
+                }
                 let packageFiles = {
                     files: [`${folderName}/package.json`, `${folderName}/package-lock.json`],
                     from: 'experiment',
