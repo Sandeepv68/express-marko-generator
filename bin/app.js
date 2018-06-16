@@ -3,4 +3,4 @@
 /**
  * express-marko-generator
  */
-const app = require('../index.js');
+const app = require('../express-marko-generator.js');
