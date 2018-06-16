@@ -126,4 +126,5 @@ Thanks to eBay and the following people for making a wonderful UI framework:
 * [Martin Aberer](https://github.com/tindli) (Twitter: [@metaCoffee](https://twitter.com/metaCoffee))
 
 also thanks to ExpressJS and MaterializeCSS for their contributions to OpenSource.
+
 Made with :heart: by [Sandeep Vattapparambil](https://github.com/SandeepVattapparambil).
