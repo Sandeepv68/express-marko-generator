@@ -115,3 +115,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 > **Note:**  This tool uses the git project [express-marko](https://github.com/SandeepVattapparambil/express-marko) as the base template, you may also check it out. This is not an official eBay project.
+
+### Acknowledgements
+Thanks to eBay and the following people for making a wonderful UI framework:
+* [Patrick Steele-Idem](https://github.com/patrick-steele-idem) (Twitter: [@psteeleidem](http://twitter.com/psteeleidem))
+* [Michael Rawlings](https://github.com/mlrawlings) (Twitter: [@mlrawlings](https://twitter.com/mlrawlings))
+* [Phillip Gates-Idem](https://github.com/philidem/) (Twitter: [@philidem](https://twitter.com/philidem))
+* [Austin Kelleher](https://github.com/austinkelleher) (Twitter: [@AustinKelleher](https://twitter.com/AustinKelleher))
+* [Dylan Piercey](https://github.com/dylanpiercey) (Twitter: [@dylan_piercey](https://twitter.com/dylan_piercey))
+* [Martin Aberer](https://github.com/tindli) (Twitter: [@metaCoffee](https://twitter.com/metaCoffee))
+
+Made with :heart: by [Sandeep Vattapparambil](https://github.com/SandeepVattapparambil).
