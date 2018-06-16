@@ -1,5 +1,5 @@
 ![express-marko-logo](https://raw.githubusercontent.com/SandeepVattapparambil/express-marko-generator/master/app-logo.png)
-# Express Marko Generator v2.0.0
+# Express Marko Generator v2.0.1
 ![npm version](https://badge.fury.io/js/express-marko-generator.svg) ![Hackage-Deps](https://img.shields.io/hackage-deps/v/lens.svg) ![npm](https://img.shields.io/npm/l/express.svg) ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 
@@ -9,33 +9,37 @@ A generic CLI tool to generate an ExpressJS application with MarkoJS and Materia
 
 ### Dependency
 This tool is built with the following npm modules.
-- ##### Async
-    Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with Node.js and installable via npm install --save async, it can also be used directly in the browser.
+##### Async
+ Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with Node.js and installable via npm install --save async, it can also be used directly in the browser.
 [https://www.npmjs.com/package/async](https://www.npmjs.com/package/async)
 
-- ##### Chalk
-    An npm module for terminal styling.
-    [https://www.npmjs.com/package/chalk](https://www.npmjs.com/package/chalk)
+##### Chalk
+ An npm module for terminal styling.
+[https://www.npmjs.com/package/chalk](https://www.npmjs.com/package/chalk)
 
-- ##### Clui
-    This is a Node.js toolkit for quickly building nice looking command line interfaces which can respond to changing terminal sizes.
-    [https://www.npmjs.com/package/clui](https://www.npmjs.com/package/clui)
+##### Clui
+This is a Node.js toolkit for quickly building nice looking command line interfaces which can respond to changing terminal sizes.
+[https://www.npmjs.com/package/clui](https://www.npmjs.com/package/clui)
 
-- ##### Figlet
-    This tool is used to draw and render ASCII graphics onto the terminal.    This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application).
-    [https://www.npmjs.com/package/figlet](https://www.npmjs.com/package/figlet)
+##### Figlet
+This tool is used to draw and render ASCII graphics onto the terminal.    This project aims to fully implement the FIGfont spec in JavaScript. It works in the browser and with Node.js. You can see it in action here: http://patorjk.com/software/taag/ (the figlet.js file was written to power that application).
+[https://www.npmjs.com/package/figlet](https://www.npmjs.com/package/figlet)
 
-- ##### Replace-in-files
-    A simple utility to quickly replace text in one or more files or globs. Works synchronously or asynchronously with either promises or callbacks. Make a single replacement or multiple replacements at once.
-    [https://www.npmjs.com/package/replace-in-file](https://www.npmjs.com/package/replace-in-file)
+##### Replace-in-files
+A simple utility to quickly replace text in one or more files or globs. Works synchronously or asynchronously with either promises or callbacks. Make a single replacement or multiple replacements at once.
+[https://www.npmjs.com/package/replace-in-file](https://www.npmjs.com/package/replace-in-file)
 
 ## Changelog
-- ##### v2.0.0
-    * Completely re-written using async to improve speed and performance.
-    * Code refactorings
-    * Code optimization
-- ##### v1.0.x
-    * Initial release prototype.
+##### v2.0.1
+- Continuous Integration (CI) added using Travis-CI.
+
+##### v2.0.0
+- Completely re-written using async to improve speed and performance.
+- Code refactorings
+- Code optimization
+
+##### v1.0.x
+- Initial release prototype.
 
 ## Installation
 ### NPM
