@@ -1,6 +1,6 @@
 ![express-marko-logo](https://raw.githubusercontent.com/SandeepVattapparambil/express-marko-generator/master/app-logo.png)
 # Express Marko Generator v2.0.1
-![npm version](https://badge.fury.io/js/express-marko-generator.svg) ![Hackage-Deps](https://img.shields.io/hackage-deps/v/lens.svg) ![npm](https://img.shields.io/npm/l/express.svg) ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![npm version](https://badge.fury.io/js/express-marko-generator.svg) ![Hackage-Deps](https://img.shields.io/hackage-deps/v/lens.svg) ![npm](https://img.shields.io/npm/l/express.svg) ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) [![Build Status](https://travis-ci.org/SandeepVattapparambil/express-marko-generator.svg?branch=master)](https://travis-ci.org/SandeepVattapparambil/express-marko-generator)
 
 
 A generic CLI tool to generate an ExpressJS application with MarkoJS and MaterializeCSS framework integration. This tool can bootstrap a complete production ready project code base with all the basic & essential project settings.
