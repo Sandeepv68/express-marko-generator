@@ -1,5 +1,5 @@
 /**
- * Express Marko Generator v2.1.0
+ * Express Marko Generator v2.1.1
  * A CLI tool to generate an ExpressJS application with MarkoJS and MaterializeCSS framework.
  * Written by: Sandeep Vattapparambil
  * Email: sandeepv68@gmail.com
@@ -56,7 +56,7 @@ const { exec } = require('child_process');
  */
 const config = {
     name: 'Express Marko Generator',
-    version: '2.1.0'
+    version: '2.1.1'
 };
 
 /**
