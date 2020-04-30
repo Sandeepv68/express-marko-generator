@@ -4,7 +4,9 @@
   "description": "A CLI tool to generate an Expressjs application with MarkoJS and MaterializeCSS framework",
   "main": "./bin/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "cli",
@@ -28,7 +30,8 @@
     "chalk": "^2.4.1",
     "clui": "^0.3.6",
     "figlet": "^1.2.0",
-    "replace-in-file": "^3.4.0"
+    "replace-in-file": "^3.4.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "repository": {
@@ -38,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/SandeepVattapparambil/express-marko-generator/issues"
   },
-  "homepage": "https://github.com/SandeepVattapparambil/express-marko-generator#readme"
+  "homepage": "https://github.com/SandeepVattapparambil/express-marko-generator#readme",
+  "snyk": true
 }
